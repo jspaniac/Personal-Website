@@ -1,0 +1,25 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Joe Spaniac's personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splisten/Personal-Website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Joe Spaniac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splisten/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/splisten/Personal-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
