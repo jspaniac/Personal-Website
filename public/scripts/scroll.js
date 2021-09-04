@@ -14,10 +14,11 @@ const preloadImages = () => {
   }
 };
 
-const img = new Image()
-img.src = currentFrame(1);
 canvas.width=1158;
 canvas.height=770;
+
+const img = new Image()
+img.src = currentFrame(1);
 img.onload=function(){
   drawScaledImage();
 }
@@ -28,13 +29,12 @@ const updateImage = index => {
 }
 
 const drawScaledImage = () => {
-  var hRatio = canvas.width  / img.width;
-  var vRatio =  canvas.height / img.height  ;
-  var ratio  = Math.min (hRatio, vRatio);
-  var centerShift_x = (canvas.width - img.width * ratio) / 2;
-  var centerShift_y = (canvas.height - img.height * ratio) / 2;  
+  const ratio  = Math.min (canvas.width  / img.width,
+	  					   canvas.height / img.height);
+  const x = (canvas.width - img.width * ratio) / 2;
+  const y = (canvas.height - img.height * ratio) / 2;  
   context.drawImage(img, 0,0, img.width, img.height,
-	                centerShift_x,centerShift_y,img.width * ratio, img.height * ratio); 
+	                x, y, img.width * ratio, img.height * ratio); 
 }
 
 window.addEventListener('scroll', () => {  
