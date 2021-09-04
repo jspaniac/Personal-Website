@@ -2,17 +2,16 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "Joe Spaniac's personal website",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/splisten/Personal-Website.git"
   },
-  "keywords": [
-    "website"
-  ],
+  "keywords": [],
   "author": "Joe Spaniac",
   "license": "ISC",
   "bugs": {
@@ -20,6 +19,11 @@
   },
   "homepage": "https://github.com/splisten/Personal-Website#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "nodemon": "^2.0.12"
   }
 }
