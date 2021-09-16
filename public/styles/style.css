@@ -1,10 +1,18 @@
 html {
 	height: 100vh;
+	font-family: Helvetica, sans-serif;
+	min-width: 600px;
 }
 
-body {
-	background: white;
-	height: 500vh;
+#anim {
+	color: white;
+	overflow-y: scroll;
+	height: 300vh;
+}
+
+#background {
+	height: 100vh;
+	background-color: white;
 }
 
 canvas {
@@ -14,4 +22,63 @@ canvas {
 	max-height: 100vh;
 	max-width: 100vw;
 	transform: translate(-50%, -50%);
+}
+
+#content {
+	height: 100vh;
+	display: block;
+	box-sizing: border-box;
+	padding: 2vw;
+	overflow-y: scroll;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-radius: 50%;
+	
+	max-width: 25%;
+	max-height: 175px;
+	height: auto;
+}
+
+#image-background {
+	background-color: rgb(207, 225, 255);
+	border-radius: 20px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: rgb(135, 179, 255)
+}
+
+p {
+	line-height: 1.75;
+}
+
+table {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#japanese {
+	left: 0;
+}
+
+/*
+Table styles
+*/
+th {
+	font-size: xxx-large;
+}
+
+td.link {
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 10px;
 }
