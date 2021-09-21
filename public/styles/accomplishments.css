@@ -1,0 +1,97 @@
+html {
+	height: 100vh;
+	font-family: Helvetica, sans-serif;
+	min-width: 600px;
+	max-width: 1110px;
+	margin: auto;
+}
+
+body {
+	padding: 2vw;
+}
+
+#title {
+	text-align: center;
+	background-color: rgb(207, 225, 255);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 20px;
+	font-size: xxx-large;
+}
+
+#title>h2 {
+	margin: 0;
+}
+
+#table {
+	display: table;
+	border-spacing: 5px;
+	width: 100%;
+}
+
+#link {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: large;
+}
+
+div.row {
+	display: table-row;
+	width: 100%;
+}
+
+.col {
+	display: table-column;
+	float: left;
+	margin: 0;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+}
+
+img {
+	background-color: white;
+}
+
+div.image {
+	width: 15%;
+	background-color: rgb(207, 225, 255);
+	padding: 5px;
+	border-radius: 10px;
+	height: 70%;
+	max-width: 110px;
+}
+
+.writing {
+	width: 85%;
+	height: 100%;
+	padding-left: 10px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: rgb(135, 179, 255)
+}
+
+img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+div.title {
+	font-size: x-large;
+}
+
+div.info {
+	font-size: small;
+}
+
+div.desc {
+	padding-top: 10px;
+	line-height: 1.75;
+}
+
+div.footer {
+	padding-top: 10px;
+	font-size: small;
+	text-align: center;
+}

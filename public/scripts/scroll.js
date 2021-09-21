@@ -6,7 +6,7 @@ const animDiv = document.getElementById("anim");
 const context = canvas.getContext("2d");
 const img = new Image()
 
-const frameCount = 30;
+const frameCount = 31;
 const currentFrame = index => (
   `images/${index.toString().padStart(4, '0')}.png`
 )
@@ -41,7 +41,8 @@ const drawScaledImage = () => {
 }
 
 window.addEventListener('scroll', () => {  
-  const animDiv = document.getElementById("anim")
+  const animDiv = document.getElementById("anim");
+  const canvas = document.getElementById("animation");
   
   const scrollTop = html.scrollTop;
   const maxScrollTop = animDiv.scrollHeight - window.innerHeight;
@@ -49,10 +50,13 @@ window.addEventListener('scroll', () => {
   const frameIndex = Math.min(frameCount - 1,
 	  			              Math.floor(scrollFraction * frameCount));
 
+						
   if (frameIndex == frameCount - 1) {
-	animDiv.style.visibility = 'hidden';
+	canvas.style.position = 'relative';
+	canvas.style.top = '80%';
   } else {
-	animDiv.style.visibility = 'visible';
+	canvas.style.position = 'fixed';
+	canvas.style.top = '50%';
     requestAnimationFrame(() => updateImage(frameIndex + 1))
   }
 });
