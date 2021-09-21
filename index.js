@@ -20,7 +20,7 @@ app.get('/lighting', (req, res) => {
 })
 
 // Server Activation
-app.listen(port, ip, () => {
+app.listen(port, () => {
 	console.log(`Listening to requests on ${port}`);
 })
 
