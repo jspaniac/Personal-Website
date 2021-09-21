@@ -8,7 +8,8 @@ html {
 
 #anim {
 	color: white;
-	overflow-y: scroll;
+	overflow-y: hidden;
+	overflow-x: hidden;
 	height: 300vh;
 }
 
