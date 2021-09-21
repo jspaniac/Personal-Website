@@ -4,8 +4,8 @@ const path = require("path");
 
 // App Variables
 const app = express();
-var port = process.env.OPENSHIFT_NODEJS_PORT || "8000";
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = process.env.PORT || "8000";
+var ip = process.env.IP || "127.0.0.1";
 
 // Routes Definitions
 app.get('/', (req, res) => {
@@ -22,7 +22,7 @@ app.get('/lighting', (req, res) => {
 
 // Server Activation
 app.listen(port, ip, () => {
-	console.log("Listening on:3 " + ip + ", port: " + port);
+	console.log(`Listening to requests on ${ip}:${port}`);
 })
 
 // App Configuration

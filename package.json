@@ -4,6 +4,7 @@
   "description": "Joe Spaniac's personal website",
   "main": "index.js",
   "scripts": {
+	"start": "node ./index.js",
     "dev": "nodemon ./index.js",
     "ui": "browser-sync start --config bs-config.js"
   },
@@ -25,5 +26,8 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "nodemon": "^2.0.12"
+  },
+  "engines": {
+      "node": "16.x"
   }
 }
