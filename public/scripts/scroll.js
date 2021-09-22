@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
 						
   if (frameIndex == frameCount - 1) {
 	canvas.style.position = 'relative';
-	canvas.style.top = '80%';
+	canvas.style.top = '78%';
   } else {
 	canvas.style.position = 'fixed';
 	canvas.style.top = '50%';
