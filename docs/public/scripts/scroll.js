@@ -8,7 +8,7 @@ const img = new Image()
 
 const frameCount = 31;
 const currentFrame = index => (
-  `images/${index.toString().padStart(4, '0')}.png`
+  `./public/images/${index.toString().padStart(4, '0')}.png`
 )
 
 const preloadImages = () => {
